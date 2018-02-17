@@ -72,7 +72,7 @@ class TVEventHandlerView extends React.Component<$FlowFixMeProps, {
     if (Platform.isTVOS) {
       return (
         <View>
-          <TouchableOpacity onPress={() => {}}>
+          <TouchableOpacity hasTVPreferredFocus={true} onPress={() => {}}>
           <Text>
             This example enables an instance of TVEventHandler to show the last event detected from the Apple TV Siri remote or from a keyboard.
           </Text>
