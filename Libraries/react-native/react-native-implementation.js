@@ -263,6 +263,9 @@ const ReactNative = {
   get TVEventHandler() {
     return require('TVEventHandler');
   },
+  get TVPosterView() {
+    return require('TVPosterView');
+  },
   get UIManager() {
     return require('UIManager');
   },
