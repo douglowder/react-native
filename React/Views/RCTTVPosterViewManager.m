@@ -15,9 +15,9 @@ RCT_EXPORT_MODULE()
 - (UIView *)view
 {
     RCTTVPosterView *v = [RCTTVPosterView new];
-    v.backgroundColor = [UIColor blueColor];
-    v.frame = CGRectMake(0, 0, 100, 100);
-    return v;
+    UIImage *originalImage = [UIImage imageNamed:v.imageURL];
+    v.image = [v imageWithImage:originalImage scaledToFillSize:CGSizeMake(128, 128)];
+    return [RCTTVPosterView new];
 }
 
 RCT_EXPORT_VIEW_PROPERTY(title, NSString *)
