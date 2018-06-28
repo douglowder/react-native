@@ -1,9 +1,9 @@
-//
-//  RCTTVPosterViewManager.m
-//  DoubleConversion
-//
-//  Created by Douglas Lowder on 6/25/18.
-//
+/**
+ * Copyright (c) 2018-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
 
 #import "RCTTVPosterViewManager.h"
 #import "RCTTVPosterView.h"
@@ -14,9 +14,6 @@ RCT_EXPORT_MODULE()
 
 - (UIView *)view
 {
-    RCTTVPosterView *v = [RCTTVPosterView new];
-    UIImage *originalImage = [UIImage imageNamed:v.imageURL];
-    v.image = [v imageWithImage:originalImage scaledToFillSize:CGSizeMake(128, 128)];
     return [RCTTVPosterView new];
 }
 

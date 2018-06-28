@@ -94,8 +94,8 @@ const TVPosterView = createReactClass({
 
 const styles = StyleSheet.create({
   tvposterview: {
-    height: 500,
-    width: 500 
+    height: 300,
+    width: 300 
   },
 });
 
